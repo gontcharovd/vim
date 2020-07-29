@@ -1,0 +1,156 @@
+""PLUGINS:
+"let need_to_install_plugins = 0 
+"if empty(glob('~/.vim/autoload/plug.vim'))
+    "silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+        "\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    ""autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+"/   let need_to_install_plugins = 1
+"endif
+"
+"call plug#begin()
+"Plug 'itchyny/lightline.vim'
+"Plug 'tomasiser/vim-code-dark'
+"Plug 'jpalardy/vim-slime'
+"Plug 'airblade/vim-gitgutter'
+"Plug 'scrooloose/syntastic'
+"Plug 'majutsushi/tagbar'
+"Plug 'vim-scripts/indentpython.vim'
+"Plug 'vim-python/python-syntax'
+"Plug 'tpope/vim-commentary'
+"Plug 'tpope/vim-vinegar'
+"Plug 'tpope/vim-unimpaired'
+"Plug 'tpope/vim-surround'
+"Plug 'tpope/vim-sensible'
+"Plug 'nelstrom/vim-visual-star-search'
+"Plug 'jalvesq/Nvim-R'
+"Plug 'shmup/vim-sql-syntax'
+"call plug#end()
+
+set hidden
+set nowrap
+
+filetype plugin indent on
+syntax on
+runtime macros/matchit.vim
+
+"if need_to_install_plugins == 1
+    "echo "Installing plugins..."
+    "silent! PlugInstall
+    "echo "Done!"
+    "q
+"endif
+"
+" GENERAL:
+" always show the status bar
+set laststatus=2
+
+set history=200
+set ignorecase
+set smartcase
+set infercase
+
+" enable 256 colors
+set t_Co=256
+set t_ut=
+
+" turn on line numbering
+set number
+
+" sane text files
+set fileformat=unix
+set encoding=utf-8
+set fileencoding=utf-8
+
+" sane editing
+set colorcolumn=80
+set viminfo='25,\"50,n~/.viminfo
+
+" COLOR SCHEME:
+colorscheme codedark
+
+set incsearch
+set hlsearch
+hi Search ctermbg=LightYellow ctermfg=Red
+hi IncSearch ctermbg=DarkYellow ctermfg=DarkRed
+nmap <leader>/ :noh<CR>
+
+" LIGHTLINE:
+set noshowmode
+let g:lightline = { 'colorscheme': 'onedark' }
+
+" NAVIGATION:
+" move through split windows
+nmap <leader>k :wincmd k<CR>
+nmap <leader>j :wincmd j<CR>
+nmap <leader>h :wincmd h<CR>
+nmap <leader>l :wincmd l<CR>
+nmap <leader>x :close <CR>
+" close buffer
+nmap <leader>d :bd<CR>
+
+" restore place in file from previous session
+autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+" FINDING FILES:
+" Search down into subfolders
+" Provides tab-completion for all file-related tasks
+set path+=**
+" Display all matching files when we tab complete
+set wildmenu
+
+let g:tagbar_compact = 1
+
+" Create the `tags` file (may need to install ctags first)
+command! MakeTags !ctags -R .
+
+" Tweaks for browsing
+nmap <leader>f :Explore<CR>
+nmap <leader><s-f> :edit.<CR>
+
+" SYNTASTIC:
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+map <leader>s :SyntasticCheck<CR>
+map <leader>a :SyntasticReset<CR>
+map <leader>n :lnext<CR>
+map <leader>p :lprev<CR>
+
+" TAGBAR:
+map <leader>m :TagbarToggle<CR>
+
+" COPYPASTE:
+vmap <C-c> "+y
+vmap <C-x> "+c
+vmap <C-v> c<ESC>"+p
+imap <C-v> <ESC>"+pa
+
+" REMAPS:
+map <Space> <Leader>
+" switch back to terminal
+nnoremap <leader>t :stop<CR>
+
+nmap <leader>e :edit %%
+" %% to expand to path of current buffer
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/': '%%'
+
+" SLIME:
+let g:slime_target = "tmux"
+let g:slime_default_config = {"socket_name": get(split($TMUX, ","), 0), "target_pane": ":.2"}
+
+" MOUSE
+set mouse=a
+let g:is_mouse_enabled = 1
+
+" netrw
+let g:netrw_altv = 1
+let g:netrw_dirhistmax = 0
+
+nnoremap & :&&<CR>
+xnoremap & :&&<CR>
+
+nmap <leader>u :update<CR>
+set grepprg=ack\ --nogroup\ --column\ $* 
+set grepformat=%f:%l:%c:%m
+
