@@ -1,7 +1,14 @@
-Installation:
+### Installation
 
-    git clone git://github.com/gontcharovd/dotfiles.git ~/.vim
+```
+git clone git://github.com/gontcharovd/dotfiles.git ~/.vim
+ln -s ~/.vim/vimrc ~/.vimrc
+cd ~/.vim
+git submodule update --init
+```
 
-Create symlinks:
+### Update all plugins
 
-    ln -s ~/.vim/vimrc ~/.vimrc
+```
+git submodule foreach git pull origin master
+```
