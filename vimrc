@@ -1,31 +1,3 @@
-""PLUGINS:
-"let need_to_install_plugins = 0 
-"if empty(glob('~/.vim/autoload/plug.vim'))
-    "silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-        "\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    ""autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-"/   let need_to_install_plugins = 1
-"endif
-"
-"call plug#begin()
-"Plug 'itchyny/lightline.vim'
-"Plug 'tomasiser/vim-code-dark'
-"Plug 'jpalardy/vim-slime'
-"Plug 'airblade/vim-gitgutter'
-"Plug 'scrooloose/syntastic'
-"Plug 'majutsushi/tagbar'
-"Plug 'vim-scripts/indentpython.vim'
-"Plug 'vim-python/python-syntax'
-"Plug 'tpope/vim-commentary'
-"Plug 'tpope/vim-vinegar'
-"Plug 'tpope/vim-unimpaired'
-"Plug 'tpope/vim-surround'
-"Plug 'tpope/vim-sensible'
-"Plug 'nelstrom/vim-visual-star-search'
-"Plug 'jalvesq/Nvim-R'
-"Plug 'shmup/vim-sql-syntax'
-"call plug#end()
-
 set hidden
 set nowrap
 
@@ -33,15 +5,7 @@ filetype plugin indent on
 syntax on
 runtime macros/matchit.vim
 
-"if need_to_install_plugins == 1
-    "echo "Installing plugins..."
-    "silent! PlugInstall
-    "echo "Done!"
-    "q
-"endif
-"
-" GENERAL:
-" always show the status bar
+" GENERAL
 set laststatus=2
 
 set history=200
@@ -153,4 +117,3 @@ xnoremap & :&&<CR>
 nmap <leader>u :update<CR>
 set grepprg=ack\ --nogroup\ --column\ $* 
 set grepformat=%f:%l:%c:%m
-
