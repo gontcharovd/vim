@@ -1,7 +1,7 @@
 ### Installation
 
 ```
-git clone git://github.com/gontcharovd/dotfiles.git ~/.vim
+git clone https://github.com/gontcharovd/vim.git ~/.vim
 ln -s ~/.vim/vimrc ~/.vimrc
 cd ~/.vim
 git submodule update --init
