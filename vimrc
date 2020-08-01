@@ -1,6 +1,8 @@
 set hidden
 set nowrap
 
+let g:lightline = { 'colorscheme': 'wombat' }
+
 filetype plugin indent on
 syntax on
 runtime macros/matchit.vim
@@ -40,7 +42,6 @@ nmap <leader>/ :noh<CR>
 
 " LIGHTLINE:
 set noshowmode
-let g:lightline = { 'colorscheme': 'onedark' }
 
 " NAVIGATION:
 " move through split windows
@@ -110,6 +111,8 @@ let g:is_mouse_enabled = 1
 " netrw
 let g:netrw_altv = 1
 let g:netrw_dirhistmax = 0
+let g:netrw_liststyle = 3
+
 
 nnoremap & :&&<CR>
 xnoremap & :&&<CR>

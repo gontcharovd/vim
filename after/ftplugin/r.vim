@@ -12,7 +12,6 @@ endfunction
 
 imap <c-K> <space><-<space>
 imap <c-L> <space>%>%
-imap <c-=> <space>:=<space>
 
 " fix indentation for R
 let r_indent_align_args = 0
@@ -20,4 +19,5 @@ let r_indent_align_args = 0
 let g:syntastic_enable_r_lintr_checker = 1
 let g:syntastic_r_checkers = ["lintr"]
 
-
+let R_assign = 0
+let vimrplugin_assign = 0
