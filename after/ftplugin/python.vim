@@ -15,7 +15,7 @@ let python_highlight_all = 1
 
 nmap <buffer> <leader>r <Esc>:w<CR>:!clear;python %<CR>
 
-nmap <leader>b <s-o>import ipdb;ipdb.set_trace()<ESC>
+nmap <leader>b oimport ipdb;ipdb.set_trace()<ESC>
 
 let g:slime_python_ipython = 1
 

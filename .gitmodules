@@ -40,3 +40,6 @@
 [submodule "pack/plugins/start/Nvim-R"]
 	path = pack/plugins/start/Nvim-R
 	url = https://github.com/jalvesaq/Nvim-R.git
+[submodule "pack/plugins/start/json"]
+	path = pack/plugins/start/json
+	url = https://github.com/elzr/vim-json.git
