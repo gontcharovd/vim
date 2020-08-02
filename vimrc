@@ -1,7 +1,6 @@
 set hidden
 set nowrap
 
-let g:lightline = { 'colorscheme': 'wombat' }
 
 filetype plugin indent on
 syntax on
@@ -17,7 +16,8 @@ set infercase
 
 " enable 256 colors
 set t_Co=256
-set t_ut=
+" " set t_ut=
+" set background="dark"
 
 " turn on line numbering
 set number
@@ -32,12 +32,14 @@ set colorcolumn=80
 set viminfo='25,\"50,n~/.viminfo
 
 " COLOR SCHEME:
-colorscheme codedark
+colorscheme nord
+" hi Normal guibg=NONE ctermbg=NONE
+let g:lightline = { 'colorscheme': 'nord' }
 
 set incsearch
 set hlsearch
-hi Search ctermbg=LightYellow ctermfg=Red
-hi IncSearch ctermbg=DarkYellow ctermfg=DarkRed
+" hi Search ctermbg=LightYellow ctermfg=Red
+" hi IncSearch ctermbg=DarkYellow ctermfg=DarkRed
 nmap <leader>/ :noh<CR>
 
 " LIGHTLINE:
@@ -112,7 +114,6 @@ let g:is_mouse_enabled = 1
 let g:netrw_altv = 1
 let g:netrw_dirhistmax = 0
 let g:netrw_liststyle = 3
-
 
 nnoremap & :&&<CR>
 xnoremap & :&&<CR>
