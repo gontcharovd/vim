@@ -113,7 +113,6 @@ let g:is_mouse_enabled = 1
 " netrw
 let g:netrw_altv = 1
 let g:netrw_dirhistmax = 0
-let g:netrw_liststyle = 3
 
 nnoremap & :&&<CR>
 xnoremap & :&&<CR>
