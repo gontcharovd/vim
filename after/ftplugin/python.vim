@@ -1,8 +1,8 @@
 " https://www.freecodecamp.org/news/turning-vim-into-an-r-ide-cd9602e8c217/
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
-set expandtab
+setlocal tabstop=4
+setlocal shiftwidth=4
+setlocal softtabstop=4
+setlocal expandtab
 
 imap <c-K> <space><-<space>
 imap <c-L> <space>%>%
