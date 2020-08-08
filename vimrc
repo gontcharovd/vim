@@ -111,7 +111,7 @@ set mouse=a
 let g:is_mouse_enabled = 1
 
 " netrw
-let g:netrw_altvgh = 1
+let g:netrw_altv = 1
 let g:netrw_dirhistmax = 0
 
 nnoremap & :&&<CR>
