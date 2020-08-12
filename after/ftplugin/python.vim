@@ -1,22 +1,13 @@
-" https://www.freecodecamp.org/news/turning-vim-into-an-r-ide-cd9602e8c217/
 setlocal tabstop=4
 setlocal shiftwidth=4
 setlocal softtabstop=4
 setlocal expandtab
 
-imap <c-K> <space><-<space>
-imap <c-L> <space>%>%
-imap <c-=> <space>:=<space>
-
-" fix indentation for R
-let r_indent_align_args = 0
-
-" SYNTAX:
 let python_highlight_all = 1
 
 nmap <buffer> <leader>r <Esc>:w<CR>:!clear;python %<CR>
 
-nmap <leader>b oimport ipdb;ipdb.set_trace()<ESC>
+nmap <leader>b oimport ipdb;ipdb.set_trace(context=5)<ESC>
 
 let g:slime_python_ipython = 1
 
