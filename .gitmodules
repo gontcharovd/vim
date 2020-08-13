@@ -7,9 +7,6 @@
 [submodule "pack/plugins/start/slime"]
 	path = pack/plugins/start/slime
 	url = https://github.com/jpalardy/vim-slime.git
-[submodule "pack/plugins/start/code-dark"]
-	path = pack/plugins/start/code-dark
-	url = https://github.com/tomasiser/vim-code-dark.git
 [submodule "pack/plugins/start/syntastic"]
 	path = pack/plugins/start/syntastic
 	url = https://github.com/vim-syntastic/syntastic.git
