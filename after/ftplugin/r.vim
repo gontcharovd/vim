@@ -5,7 +5,6 @@ set expandtab
 
 nnoremap <buffer> <leader>r <Esc>:w<CR>:!clear;Rscript %<CR>
 
-" Strip r''' and ''' when sending to R console with vim-slime
 function! _EscapeText_r(text)
   call system("cat > ~/.slime_r", a:text)
   return ["source('~/.slime_r', echo = TRUE, max.deparse.length = 4095)\r"]
@@ -19,3 +18,4 @@ let r_indent_align_args = 0
 
 let g:syntastic_enable_r_lintr_checker = 1
 let g:syntastic_r_checkers = ["lintr"]
+let g:syntastic_r_lintr_linters = "with_defaults(object_usage_linter = NULL)"
