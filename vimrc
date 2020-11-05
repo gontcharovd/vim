@@ -123,4 +123,4 @@ set grepformat=%f:%l:%c:%m
 
 cnoreabbrev H vert h
 
-highlight Visual ctermbg=Lightblue ctermfg=NONE
+" highlight Visual ctermbg=Lightgray ctermfg=white
