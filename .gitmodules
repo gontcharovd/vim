@@ -43,6 +43,3 @@
 [submodule "pack/plugins/start/nord"]
 	path = pack/plugins/start/nord
 	url = https://github.com/arcticicestudio/nord-vim.git
-[submodule "vim-polyglot"]
-	path = vim-polyglot
-	url = https://github.com/sheerun/vim-polyglot.git
