@@ -122,5 +122,3 @@ set grepprg=ack\ --nogroup\ --column\ $*
 set grepformat=%f:%l:%c:%m
 
 cnoreabbrev H vert h
-
-" highlight Visual ctermbg=Lightgray ctermfg=white
