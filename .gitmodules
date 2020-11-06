@@ -40,6 +40,3 @@
 [submodule "pack/plugins/start/surround"]
 	path = pack/plugins/start/surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule "pack/plugins/start/nord"]
-	path = pack/plugins/start/nord
-	url = https://github.com/arcticicestudio/nord-vim.git
