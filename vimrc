@@ -21,6 +21,7 @@ set t_Co=256
 
 " turn on line numbering
 set number
+set clipboard=unnamed
 
 " sane text files
 set fileformat=unix
