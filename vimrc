@@ -1,7 +1,6 @@
 set hidden
 set nowrap
 
-
 filetype plugin indent on
 syntax on
 runtime macros/matchit.vim
@@ -16,8 +15,8 @@ set infercase
 
 " enable 256 colors
 set t_Co=256
-" " set t_ut=
-" set background="dark"
+let &t_ut=''
+set background=dark
 
 " turn on line numbering
 set number
@@ -33,9 +32,10 @@ set colorcolumn=80
 set viminfo='25,\"50,n~/.viminfo
 
 " COLOR SCHEME:
-colorscheme nord
+colorscheme tender
 " hi Normal guibg=NONE ctermbg=NONE
-let g:lightline = { 'colorscheme': 'nord' }
+hi colorcolumn ctermbg=8
+let g:lightline = { 'colorscheme': 'wombat' }
 
 set incsearch
 set hlsearch
@@ -118,10 +118,8 @@ let g:netrw_dirhistmax = 0
 nnoremap & :&&<CR>
 xnoremap & :&&<CR>
 
-nmap <leader>u :update<CR>
+nmap <leader>s :update<CR>
 set grepprg=ack\ --nogroup\ --column\ $* 
 set grepformat=%f:%l:%c:%m
 
 cnoreabbrev H vert h
-
-" highlight Visual ctermbg=Lightgray ctermfg=white

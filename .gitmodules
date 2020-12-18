@@ -49,3 +49,15 @@
 [submodule "pack/plugins/start/vim-obsession"]
 	path = pack/plugins/start/vim-obsession
 	url = https://github.com/tpope/vim-obsession.git
+[submodule "pack/plugins/start/vim-synthwave84"]
+	path = pack/plugins/start/vim-synthwave84
+	url = https://github.com/artanikin/vim-synthwave84.git
+[submodule "pack/plugins/start/oceanic-next"]
+	path = pack/plugins/start/oceanic-next
+	url = https://github.com/mhartington/oceanic-next.git
+[submodule "pack/plugins/start/happy_hacking"]
+	path = pack/plugins/start/happy_hacking
+	url = https://github.com/YorickPeterse/happy_hacking.vim.git
+[submodule "pack/plugins/start/tender"]
+	path = pack/plugins/start/tender
+	url = https://github.com/jacoborus/tender.vim.git
