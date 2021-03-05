@@ -28,7 +28,8 @@ set colorcolumn=80
 " remember cursor positions
 set viminfo='25,\"50,n~/.viminfo
 
-colorscheme tender
+let g:gruvbox_italic=0
+colorscheme gruvbox
 hi Normal guibg=NONE ctermbg=NONE
 hi colorcolumn ctermbg=8
 let g:lightline = { 'colorscheme': 'wombat' }

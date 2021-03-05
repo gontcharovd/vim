@@ -61,3 +61,6 @@
 [submodule "pack/plugins/start/tender"]
 	path = pack/plugins/start/tender
 	url = https://github.com/jacoborus/tender.vim.git
+[submodule "pack/plugins/start/gruvbox"]
+	path = pack/plugins/start/gruvbox
+	url = https://github.com/morhetz/gruvbox.git
