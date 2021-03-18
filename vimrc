@@ -76,6 +76,8 @@ map <leader>p :lprev<CR>
 
 map <leader>m :TagbarToggle<CR>
 
+map <leader>h :TagbarToggle<CR>
+
 " copypaste
 vmap <C-c> "+y
 vmap <C-x> "+c
@@ -86,7 +88,7 @@ map <Space> <Leader>
 " switch back to terminal
 nnoremap <leader>t :stop<CR>
 
-nmap <leader>e :edit %%
+nmap <leader>e :!thunar %%<CR><CR>
 " %% to expand to path of current buffer
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/': '%%'
 
@@ -111,3 +113,5 @@ cnoreabbrev H vert h
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+
+
