@@ -10,9 +10,6 @@
 [submodule "pack/plugins/start/syntastic"]
 	path = pack/plugins/start/syntastic
 	url = https://github.com/vim-syntastic/syntastic.git
-[submodule "pack/plugins/start/tagbar"]
-	path = pack/plugins/start/tagbar
-	url = https://github.com/majutsushi/tagbar.git
 [submodule "pack/plugins/start/indentpython"]
 	path = pack/plugins/start/indentpython
 	url = https://github.com/vim-scripts/indentpython.vim.git
@@ -40,27 +37,9 @@
 [submodule "pack/plugins/start/surround"]
 	path = pack/plugins/start/surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule "pack/plugins/start/nord-vim"]
-	path = pack/plugins/start/nord-vim
-	url = https://github.com/arcticicestudio/nord-vim.git
-[submodule "pack/plugins/start/vim-polyglot"]
-	path = pack/plugins/start/vim-polyglot
-	url = https://github.com/sheerun/vim-polyglot.git
 [submodule "pack/plugins/start/vim-obsession"]
 	path = pack/plugins/start/vim-obsession
 	url = https://github.com/tpope/vim-obsession.git
-[submodule "pack/plugins/start/vim-synthwave84"]
-	path = pack/plugins/start/vim-synthwave84
-	url = https://github.com/artanikin/vim-synthwave84.git
-[submodule "pack/plugins/start/oceanic-next"]
-	path = pack/plugins/start/oceanic-next
-	url = https://github.com/mhartington/oceanic-next.git
-[submodule "pack/plugins/start/happy_hacking"]
-	path = pack/plugins/start/happy_hacking
-	url = https://github.com/YorickPeterse/happy_hacking.vim.git
-[submodule "pack/plugins/start/tender"]
-	path = pack/plugins/start/tender
-	url = https://github.com/jacoborus/tender.vim.git
 [submodule "pack/plugins/start/gruvbox"]
 	path = pack/plugins/start/gruvbox
 	url = https://github.com/morhetz/gruvbox.git
