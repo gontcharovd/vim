@@ -56,8 +56,6 @@ set path+=**
 " Display all matching files when we tab complete
 set wildmenu
 
-let g:tagbar_compact = 1
-
 " Create the `tags` using universal ctags
 command! MakeTags !ctags -R .
 
@@ -73,10 +71,6 @@ map <leader>s :SyntasticCheck<CR>
 map <leader>a :SyntasticReset<CR>
 map <leader>n :lnext<CR>
 map <leader>p :lprev<CR>
-
-map <leader>m :TagbarToggle<CR>
-
-map <leader>h :TagbarToggle<CR>
 
 " copypaste
 vmap <C-c> "+y
