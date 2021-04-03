@@ -67,7 +67,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-map <leader>s :SyntasticCheck<CR>
+map <leader>q :SyntasticCheck<CR>
 map <leader>a :SyntasticReset<CR>
 map <leader>n :lnext<CR>
 map <leader>p :lprev<CR>
@@ -99,6 +99,8 @@ nnoremap & :&&<CR>
 xnoremap & :&&<CR>
 
 nmap <leader>s :update<CR>
+nmap <leader>w :w !sudo tee % > /dev/null<CR>
+
 set grepprg=ack\ --nogroup\ --column\ $* 
 set grepformat=%f:%l:%c:%m
 
@@ -107,5 +109,3 @@ cnoreabbrev H vert h
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
-
-
