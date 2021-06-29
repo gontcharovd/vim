@@ -12,8 +12,8 @@ set ignorecase
 set smartcase
 set infercase
 
-let &t_ut=''
-set background=dark
+" fixes background issue with commented lines in tmux
+set t_ut=
 
 set number
 set clipboard=unnamed
