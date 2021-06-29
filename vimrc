@@ -12,7 +12,6 @@ set ignorecase
 set smartcase
 set infercase
 
-set t_Co=256
 let &t_ut=''
 set background=dark
 
@@ -25,14 +24,15 @@ set fileencoding=utf-8
 
 set colorcolumn=80
 
+set termguicolors
+
 " remember cursor positions
 set viminfo='25,\"50,n~/.viminfo
 
-let g:gruvbox_italic=0
-colorscheme gruvbox
-hi Normal guibg=NONE ctermbg=NONE
-hi colorcolumn ctermbg=8
-let g:lightline = { 'colorscheme': 'wombat' }
+let g:oceanic_next_terminal_bold = 1
+let g:oceanic_next_terminal_italic = 1
+colorscheme OceanicNext
+let g:lightline = { 'colorscheme': 'oceanicnext' }
 
 set incsearch
 set hlsearch

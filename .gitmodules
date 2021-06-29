@@ -40,9 +40,9 @@
 [submodule "pack/plugins/start/vim-obsession"]
 	path = pack/plugins/start/vim-obsession
 	url = https://github.com/tpope/vim-obsession.git
-[submodule "pack/plugins/start/gruvbox"]
-	path = pack/plugins/start/gruvbox
-	url = https://github.com/morhetz/gruvbox.git
 [submodule "pack/plugins/start/ultisnips"]
 	path = pack/plugins/start/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
+[submodule "pack/plugins/start/oceanic-next"]
+	path = pack/plugins/start/oceanic-next
+	url = https://github.com/mhartington/oceanic-next.git
