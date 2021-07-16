@@ -108,3 +108,5 @@ cnoreabbrev H vert h
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+
+nmap <leader>c :! docker cp src/ scraping-engine:/home/seluser/<CR><CR>
