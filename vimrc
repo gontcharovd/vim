@@ -110,3 +110,6 @@ let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 nmap <leader>c :! docker cp src/ scraping-engine:/home/seluser/<CR><CR>
+
+nnoremap n nzzzv
+nnoremap N Nzzzv
