@@ -46,3 +46,6 @@
 [submodule "pack/plugins/start/oceanic-next"]
 	path = pack/plugins/start/oceanic-next
 	url = https://github.com/mhartington/oceanic-next.git
+[submodule "pack/plugins/start/jedi-vim"]
+	path = pack/plugins/start/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
