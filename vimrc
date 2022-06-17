@@ -127,3 +127,11 @@ let g:jedi#popup_select_first = 0
 set completeopt-=preview
 
 let g:vim_markdown_folding_disabled = 1
+
+set nocompatible
+filetype plugin on       " may already be in your .vimrc
+
+augroup lexical
+  autocmd!
+  autocmd FileType markdown,mkd call lexical#init()
+augroup END
