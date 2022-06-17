@@ -125,3 +125,5 @@ let g:jedi#rename_command = "<leader>r"
 let g:jedi#use_splits_not_buffers = "left"
 let g:jedi#popup_select_first = 0
 set completeopt-=preview
+
+let g:vim_markdown_folding_disabled = 1
