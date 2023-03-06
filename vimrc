@@ -99,6 +99,7 @@ xnoremap & :&&<CR>
 
 nmap <leader>s :update<CR>
 nmap <leader>w :w !sudo tee % > /dev/null<CR>
+nmap <leader>f :!python -m black expand('%:p:h')<CR>
 
 set grepprg=ack\ --nogroup\ --column\ $* 
 set grepformat=%f:%l:%c:%m

@@ -58,3 +58,6 @@
 [submodule "pack/plugins/start/vim-lexical"]
 	path = pack/plugins/start/vim-lexical
 	url = https://github.com/preservim/vim-lexical.git
+[submodule "pack/plugins/start/vim-bicep"]
+	path = pack/plugins/start/vim-bicep
+	url = https://github.com/carlsmedstad/vim-bicep.git
