@@ -30,7 +30,7 @@ set termguicolors
 set viminfo='25,\"50,n~/.viminfo
 
 let g:oceanic_next_terminal_bold = 1
-colorscheme OceanicNext
+colorscheme nord
 let g:lightline = { 'colorscheme': 'oceanicnext' }
 
 set incsearch
