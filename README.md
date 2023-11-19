@@ -7,10 +7,16 @@ cd ~/.vim
 git submodule update --init
 ```
 
+### Add modules
+
+```
+git submodule add https://github.com/instant-markdown/vim-instant-markdown.git after/pack/start/vim-instant-markdown
+```
+
 ### Update all plugins
 
 ```
-git submodule foreach git pull origin master
+git submodule update --remote --merge
 ```
 
 ### Removing a plugin and its git submodule
