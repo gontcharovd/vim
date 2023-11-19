@@ -64,7 +64,8 @@ nmap <leader><s-f> :edit.<CR>
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_save = 0
 let g:syntastic_check_on_wq = 0
 map <leader>q :SyntasticCheck<CR>
 map <leader>a :SyntasticReset<CR>
@@ -100,6 +101,7 @@ xnoremap & :&&<CR>
 nmap <leader>s :update<CR>
 nmap <leader>w :w !sudo tee % > /dev/null<CR>
 nmap <leader>f :!python -m black %<CR>
+nmap <leader>p :!pandoc -i % -o %<.pdf<CR>
 
 set grepprg=ack\ --nogroup\ --column\ $* 
 set grepformat=%f:%l:%c:%m
