@@ -64,6 +64,3 @@
 [submodule "pack/plugins/start/vim-nord"]
 	path = pack/plugins/start/vim-nord
 	url = https://github.com/nordtheme/vim
-[submodule "pack/plugins/start/vim-instant-markdown"]
-	path = pack/plugins/start/vim-instant-markdown
-	url = https://github.com/instant-markdown/vim-instant-markdown.git
