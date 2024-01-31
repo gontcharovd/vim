@@ -29,9 +29,8 @@ set termguicolors
 " remember cursor positions
 set viminfo='25,\"50,n~/.viminfo
 
-let g:oceanic_next_terminal_bold = 1
 colorscheme nord
-let g:lightline = { 'colorscheme': 'oceanicnext' }
+let g:lightline = { 'colorscheme': 'nord' }
 
 set incsearch
 set hlsearch
@@ -115,22 +114,9 @@ nmap <leader>c :! docker cp src/ scraping-engine:/home/seluser/<CR><CR>
 nnoremap n nzzzv
 nnoremap N Nzzzv
 
-let g:jedi#goto_command = "<leader>d"
-let g:jedi#goto_assignments_command = "<leader>g"
-let g:jedi#goto_stubs_command = "<leader>y"
-let g:jedi#goto_definitions_command = ""
-let g:jedi#documentation_command = "K"
-let g:jedi#usages_command = "<leader>n"
-let g:jedi#completions_command = "<C-Space>"
-let g:jedi#rename_command = "<leader>r"
-let g:jedi#use_splits_not_buffers = "left"
-let g:jedi#popup_select_first = 0
-set completeopt-=preview
-
 let g:vim_markdown_folding_disabled = 1
 
 set nocompatible
-filetype plugin on       " may already be in your .vimrc
 
 augroup lexical
   autocmd!
