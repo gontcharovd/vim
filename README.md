@@ -10,7 +10,7 @@ git submodule update --init
 ### Add modules
 
 ```
-git submodule add https://github.com/instant-markdown/vim-instant-markdown.git after/pack/start/vim-instant-markdown
+git submodule add https://github.com/instant-markdown/vim-instant-markdown.git pack/plugins/start/vim-instant-markdown
 ```
 
 ### Update all plugins

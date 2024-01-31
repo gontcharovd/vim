@@ -99,6 +99,7 @@ nnoremap & :&&<CR>
 xnoremap & :&&<CR>
 
 nmap <leader>s :update<CR>
+nmap <leader>e :edit!<CR>
 nmap <leader>w :w !sudo tee % > /dev/null<CR>
 nmap <leader>f :!python -m black %<CR>
 nmap <leader>p :!pandoc -i % -o %<.pdf<CR>
