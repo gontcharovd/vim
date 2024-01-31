@@ -4,9 +4,6 @@
 [submodule "pack/plugins/start/gitgutter"]
 	path = pack/plugins/start/gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
-[submodule "pack/plugins/start/slime"]
-	path = pack/plugins/start/slime
-	url = https://github.com/jpalardy/vim-slime.git
 [submodule "pack/plugins/start/syntastic"]
 	path = pack/plugins/start/syntastic
 	url = https://github.com/vim-syntastic/syntastic.git

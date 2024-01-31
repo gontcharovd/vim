@@ -86,9 +86,6 @@ nmap <leader>e :!thunar %%<CR><CR>
 " %% to expand to path of current buffer
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/': '%%'
 
-let g:slime_target = "tmux"
-let g:slime_default_config = {"socket_name": get(split($TMUX, ","), 0), "target_pane": ":.2"}
-
 set mouse=a
 let g:is_mouse_enabled = 1
 
