@@ -8,3 +8,4 @@ nmap <buffer> <leader>r <Esc>:w<CR>:!clear;python %<CR>
 nmap <buffer> <leader>b oimport ipdb;ipdb.set_trace(context=5)<ESC>
 let g:syntastic_enable_python_lintr_checker = 1
 let g:syntastic_r_checkers = ["flake8"]
+nmap <leader>f :!python -m black %<CR>

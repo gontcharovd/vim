@@ -97,19 +97,12 @@ xnoremap & :&&<CR>
 nmap <leader>s :update<CR>
 nmap <leader>e :edit!<CR>
 nmap <leader>w :w !sudo tee % > /dev/null<CR>
-nmap <leader>f :!python -m black %<CR>
 nmap <leader>p :!pandoc -i % -o %<.pdf<CR>
 
 set grepprg=ack\ --nogroup\ --column\ $* 
 set grepformat=%f:%l:%c:%m
 
 cnoreabbrev H vert h
-
-let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsJumpForwardTrigger = "<tab>"
-let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
-
-nmap <leader>c :! docker cp src/ scraping-engine:/home/seluser/<CR><CR>
 
 nnoremap n nzzzv
 nnoremap N Nzzzv
