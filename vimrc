@@ -1,3 +1,4 @@
+set shell=fish
 set hidden
 set nowrap
 
@@ -115,3 +116,8 @@ augroup lexical
   autocmd!
   autocmd FileType markdown,mkd call lexical#init()
 augroup END
+
+" Ranger in Vim
+let g:ranger_map_keys = 0
+nmap <leader>r :Ranger<CR>
+let g:ranger_replace_netrw = 1
