@@ -58,3 +58,6 @@
 [submodule "pack/plugins/start/vim-ps1"]
 	path = pack/plugins/start/vim-ps1
 	url = https://github.com/PProvost/vim-ps1
+[submodule "pack/plugins/start/fzf"]
+	path = pack/plugins/start/fzf
+	url = https://github.com/junegunn/fzf.vim.git

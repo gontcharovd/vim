@@ -59,7 +59,8 @@ set wildmenu
 command! MakeTags !ctags -R .
 
 " file browsing
-nmap <leader>f :Explore<CR>
+nmap <leader>f :Files<CR>
+nmap <leader>b :Buffers<CR>
 nmap <leader><s-f> :edit.<CR>
 
 let g:syntastic_always_populate_loc_list = 1
