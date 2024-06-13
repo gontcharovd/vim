@@ -61,3 +61,6 @@
 [submodule "pack/plugins/start/fzf"]
 	path = pack/plugins/start/fzf
 	url = https://github.com/junegunn/fzf.vim.git
+[submodule "pack/plugins/start/vim-livedown"]
+	path = pack/plugins/start/vim-livedown
+	url = https://github.com/shime/vim-livedown.git
