@@ -100,6 +100,7 @@ nmap <leader>s :update<CR>
 nmap <leader>e :edit!<CR>
 nmap <leader>w :w !sudo tee % > /dev/null<CR>
 nmap <leader>p :!pandoc -i % -o %<.pdf<CR>
+nmap <leader>m :LivedownToggle<CR>
 
 set grepprg=ack\ --nogroup\ --column\ $* 
 set grepformat=%f:%l:%c:%m
