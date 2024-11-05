@@ -63,13 +63,6 @@ nmap <leader>f :Files<CR>
 nmap <leader>b :Buffers<CR>
 nmap <leader><s-f> :edit.<CR>
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_save = 0
-let g:syntastic_check_on_wq = 0
-map <leader>q :SyntasticCheck<CR>
-map <leader>a :SyntasticReset<CR>
 map <leader>n :lnext<CR>
 map <leader>p :lprev<CR>
 
@@ -80,10 +73,10 @@ vmap <C-v> c<ESC>"+p
 imap <C-v> <ESC>"+pa
 
 map <Space> <Leader>
+
 " switch back to terminal
 nnoremap <leader>t :stop<CR>
 
-nmap <leader>e :!thunar %%<CR><CR>
 " %% to expand to path of current buffer
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/': '%%'
 
@@ -99,11 +92,7 @@ xnoremap & :&&<CR>
 nmap <leader>s :update<CR>
 nmap <leader>e :edit!<CR>
 nmap <leader>w :w !sudo tee % > /dev/null<CR>
-nmap <leader>p :!pandoc -i % -o %<.pdf<CR>
-nmap <leader>m :LivedownToggle<CR>
-
-set grepprg=ack\ --nogroup\ --column\ $* 
-set grepformat=%f:%l:%c:%m
+nmap <leader>p :!pandoc -i % --toc -o %<.pdf --pdf-engine=xelatex<CR>
 
 cnoreabbrev H vert h
 
